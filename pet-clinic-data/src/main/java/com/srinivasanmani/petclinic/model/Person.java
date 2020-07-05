@@ -1,4 +1,4 @@
-package model;
+package com.srinivasanmani.petclinic.model;
 
 public class Person {
     private String firstName;
