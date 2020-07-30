@@ -9,13 +9,8 @@ import java.util.Set;
  * Date: 5/7/20
  * Project: petclinic
  */
-public interface OwnerService {
-
-    Owner findById(Long id);
+public interface OwnerService extends CrudService<Owner,Long> {
 
     Owner findByLastName(String lastName);
 
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 }

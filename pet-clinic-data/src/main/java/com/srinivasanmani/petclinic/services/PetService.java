@@ -1,5 +1,6 @@
 package com.srinivasanmani.petclinic.services;
 
+import com.srinivasanmani.petclinic.model.Owner;
 import com.srinivasanmani.petclinic.model.Pet;
 
 import java.util.Set;
@@ -9,11 +10,6 @@ import java.util.Set;
  * Date: 5/7/20
  * Project: petclinic
  */
-public interface PetService {
+public interface PetService extends CrudService<Pet,Long> {
 
-    Pet findById(Long id);
-
-    Pet save(Pet pet ) ;
-
-    Set<Pet> findAll();
 }
